@@ -1,7 +1,5 @@
 import './styles.css';
 import React, { useState } from 'react';
-import { QRCodeSVG } from 'qrcode.react';
-import { BrowserRouter as Router, Navigate } from "react-router-dom";
 import Generator from '../../Components/qrcodeGenerator';
 import Qrcode from '../../Components/qrcode';
 

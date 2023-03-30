@@ -1,7 +1,6 @@
 import './styles.css';
-import React, { useState } from 'react';
-import { QRCodeSVG } from 'qrcode.react';
-import { BrowserRouter as Router, Navigate } from "react-router-dom";
+import React from 'react';
+
 
 function Generator({
 name,
@@ -32,11 +31,6 @@ setRedirectTo
       };
       
   
-    //   if (redirectTo) {
-    //     return <Navigate to={`/qrcode/${redirectTo}`}/>;
-    //   }
-      
-
     return (    
     
       <div className="container">

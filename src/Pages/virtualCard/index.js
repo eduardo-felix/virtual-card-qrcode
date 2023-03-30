@@ -53,7 +53,7 @@ function VirtualCard() {
     <div className="container">
     <h1>Hello, my name is {name}</h1>
     <h2> </h2>   
-        <img src={fotoPerfil}></img>
+        <img src={fotoPerfil} alt='foto de perfil' ></img>
       <div className='buttons-container'>
       <a href={user.linkedin} target="_blank" rel="noopener noreferrer">
           <button type="link" > LinkedIn</button>
