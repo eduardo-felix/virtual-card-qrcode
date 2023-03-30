@@ -8,29 +8,6 @@ function VirtualCard() {
   const [search, setSearch] = useState(false)
   const { name, id } = useParams()
 
-  async function getProfilePictureUrl(linkedinProfileUrl) {
-    try {
-      const response = await fetch(linkedinProfileUrl);
-      const html = await response.text();
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, "text/html");
-      const profilePictureUrl = doc.querySelector('.profile-photo-edit__edit-btn img').getAttribute('src');
-      console.log(profilePictureUrl);
-      return profilePictureUrl;
-    } catch (error) {
-      console.error(error);
-    }
-  }
-   
-  async function showProfilePictureUrl() {
-    const fotoPerfil = await getProfilePictureUrl('https://www.linkedin.com/in/eduardofelixdev/');
-    return fotoPerfil ;
-  }
-   const fotoPerfil = showProfilePictureUrl();
-
-   console.log(fotoPerfil);
-  
-
   useEffect(() => {
       const getUser = async () => {
           try {
@@ -51,9 +28,8 @@ function VirtualCard() {
   return (       
       
     <div className="container">
-    <h1>Hello, my name is {name}</h1>
-    <h2> </h2>   
-        <img src={fotoPerfil} alt='foto de perfil' ></img>
+    <h1>Hello, my name is {name}</h1>   
+        
       <div className='buttons-container'>
       <a href={user.linkedin} target="_blank" rel="noopener noreferrer">
           <button type="link" > LinkedIn</button>
