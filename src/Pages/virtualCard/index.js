@@ -28,18 +28,22 @@ function VirtualCard() {
   return (       
       
     <div className="container">
-    <h1>Hello, my name is {name}</h1>   
+        <div className="center-container">
         
-      <div className='buttons-container'>
-      <a href={user.linkedin} target="_blank" rel="noopener noreferrer">
-          <button type="link" > LinkedIn</button>
-      </a>      
-      <a href={user.github} target="_blank" rel="noopener noreferrer">
-          <button type="link" > GitHub</button>
-      </a>
-      </div>
-        
-  </div>
+            <h1>Hello, my name is {name}</h1>
+                <h2>This are my professional information</h2>   
+                
+                <div className='buttons-container'>
+                <a href={user.linkedin} target="_blank" rel="noopener noreferrer">
+                    <button type="link" > LinkedIn</button>
+                </a>      
+                <a href={user.github} target="_blank" rel="noopener noreferrer">
+                    <button type="link" > GitHub</button>
+                </a>
+                </div>
+        </div>
+      </div>   
+  
     
   );
 }

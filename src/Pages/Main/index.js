@@ -13,26 +13,28 @@ function Main() {
 
     
   return (    
-    <div className="container333">
-      {currentPath === '/' && redirectTo === "" && 
-        <Generator 
-          name={name}
-          setName={setName}
-          linkedin={linkedin}
-          setLinkedin={setLinkedin}
-          github={github}
-          setGithub={setGithub}
-          setRedirectTo={setRedirectTo}          
-          redirectTo={redirectTo}
-        />
-      }
-      {redirectTo !== "" &&
-        <Qrcode 
-          name={name}
-          linkedin={linkedin}
-          github={github}
-        />
-      }
+    <div className="container">
+        <div className="center-container">
+        {currentPath === '/' && redirectTo === "" && 
+          <Generator 
+            name={name}
+            setName={setName}
+            linkedin={linkedin}
+            setLinkedin={setLinkedin}
+            github={github}
+            setGithub={setGithub}
+            setRedirectTo={setRedirectTo}          
+            redirectTo={redirectTo}
+          />
+        }
+        {redirectTo !== "" &&
+          <Qrcode 
+            name={name}
+            linkedin={linkedin}
+            github={github}
+          />
+        }
+        </div>
     </div>
   );
 }
