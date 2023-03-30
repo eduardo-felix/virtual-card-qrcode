@@ -28,8 +28,7 @@ label {
   font-weight: 600;
 }
 
-input[type="text"],
-input[type="url"] {
+input {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
