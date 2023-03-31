@@ -31,7 +31,7 @@ function VirtualCard() {
         <div className="center-container">
         
             <h1>Hello, my name is {name}</h1>
-                <h2>This are my professional information</h2>   
+                <h2>This are my professional informations</h2>   
                 
                 <div className='buttons-container'>
                 <a href={user.linkedin} target="_blank" rel="noopener noreferrer">
