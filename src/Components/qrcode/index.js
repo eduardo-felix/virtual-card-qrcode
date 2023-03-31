@@ -27,9 +27,11 @@ function Qrcode ({name, linkedin, github}) {
   return (       
       
       <div className="container">
-          <h1>Hello, my name is {name}</h1>
-          <h2> Scam me </h2>   
-           <img src={qrCodeImage} alt="QR Code" />    
+          <div className="center-container">
+              <h1 className='hello'>Hello, my name is {name} !</h1>
+              <h2 className='scam'> Scam me </h2>   
+              <img src={qrCodeImage} alt="QR Code" /> 
+          </div>   
       </div>
     
   );

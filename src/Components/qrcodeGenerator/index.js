@@ -34,6 +34,7 @@ setRedirectTo
     return (    
     
       <div className="container">
+        <div className="center-container">
       <h1>QR Code Image Generator</h1>      
       <form  id='form' onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
@@ -69,7 +70,8 @@ setRedirectTo
           required
         />
         <button type="submit" > Generate Code</button>
-      </form>      
+      </form>
+      </div>      
     </div>
     
   );

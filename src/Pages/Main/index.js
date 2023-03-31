@@ -13,8 +13,7 @@ function Main() {
 
     
   return (    
-    <div className="container">
-        <div className="center-container">
+    <div className="container">        
         {currentPath === '/' && redirectTo === "" && 
           <Generator 
             name={name}
@@ -33,8 +32,7 @@ function Main() {
             linkedin={linkedin}
             github={github}
           />
-        }
-        </div>
+        }        
     </div>
   );
 }
